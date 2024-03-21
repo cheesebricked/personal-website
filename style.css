@@ -1,74 +1,49 @@
+:root {
+    --pink: #FCB0B3;
+    --yellow: #FCECC9;
+    --dark-blue: #445E93;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #FCECC9;
     font-family: sans-serif;
-    color:  #445E93;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--yellow);
+    color:  var(--dark-blue);
 }
 
 .header {
-    position: sticky;
-    background: #FCB0B3;
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: auto;
-    background: #FCB0B3;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     text-align: center;
-    justify-content: space-between;
-}
-
-.my-name > h2, .h-links > li{
-    background: #FCB0B3;
+    position: sticky;
+    background: var(--pink);
 }
 
 .my-name {
-    text-align: center;
-    align-items: left;
-    justify-content: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .h-links {
-    list-style-type: none;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-flow: wrap;
+    margin-bottom: 10px;
 }
 
 .h-links > li {
+    list-style-type: none;
     font-size: 20px;
-    font-weight: 500;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 4px;
-}
-
-a:link { 
-    text-decoration: none; 
-    background: #FCB0B3;
-  } 
-  a:visited { 
-    text-decoration: none; 
-    background: #FCB0B3;
-  } 
-  a:hover { 
-    text-decoration: none; 
-    background: #FCB0B3;
-  } 
-  a:active { 
-    text-decoration: none; 
-    background: #FCB0B3;
-  }
-
-.about-me {
-    padding: 200px;
-    padding-left: 300px;
-    padding-right: 300px;
-    display: inline-flex;
-    text-align: center;
-    justify-content: space-around;
+    margin: 5px 100px;
 }
 
 .pfp {
