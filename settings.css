@@ -1,0 +1,22 @@
+:root {
+    --pink: #FCB0B3;
+    --yellow: #FCECC9;
+    --dark-blue: #445E93;
+    --red: #F93943;
+    --light-blue: #7EB2DD;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--yellow);
+    color:  var(--dark-blue);
+}

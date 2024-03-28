@@ -1,0 +1,74 @@
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .about-me {
+        width: 100%;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .about-me > .left {
+        padding-right: 0px;
+        margin-bottom: 20px;
+        justify-self: center;
+    }
+}
+
+.items {
+    background-color: var(--light-blue);
+    width: 100%;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+@media only screen and (max-width: 344px) {
+    .items {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.items-label {
+    font-size: 45px;
+    color: var(--pink);
+    text-shadow: -3px -3px 0 var(--dark-blue), 1px -1px 0 var(--dark-blue), -1px 1px 0 var(--dark-blue), 1px 1px 0 var(--dark-blue);
+    letter-spacing: 5px;
+}
+
+
+.item-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    margin: 30px;
+}
+
+.item > h1 {
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: var(--pink);
+    text-shadow: -3px -3px 0 var(--dark-blue), 1px -1px 0 var(--dark-blue), -1px 1px 0 var(--dark-blue), 1px 1px 0 var(--dark-blue);
+    transition: 0.1s;
+}
+
+.item > h1:hover {
+    font-size: 40px;
+}
+
+.item > ul > li {
+    font-size: 17px;
+    margin: 5px;
+    margin-left: 30px;
+    inline-size: clamp(100px, 400px);
+    overflow-wrap: break-word;
+    letter-spacing: 0.9px;
+}
+
+@media only screen and (min-width: 450px) {
+    .item > ul > li {
+        inline-size: 400px;
+    }
+}

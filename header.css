@@ -1,0 +1,83 @@
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: var(--pink);
+}
+
+.my-name {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    text-shadow: -3px -3px 0 var(--light-blue), 1px -1px 0 var(--light-blue), -1px 1px 0 var(--light-blue), 1px 1px 0 var(--light-blue);
+    letter-spacing: 5px;
+}
+
+.h-links {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    margin-bottom: 0px;
+    margin-right: 20px;
+}
+
+.h-links > li {
+    list-style-type: none;
+    font-size: 20px;
+    margin: 5px 50px;
+    transition: 0.1s;
+    letter-spacing: 2px;
+}
+
+.h-links > li:hover {
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .h-links > li {
+        margin: 5px 100px;
+    }
+}
+
+.pfp {
+    width: 250px;
+    border-radius: 50%;
+}
+
+.content {
+    margin: 50px;
+    width: 100%;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+    width: 70%;
+    margin: auto;
+}
+
+.about-me > .right > h1 {
+    font-size: 45px;
+    color: var(--pink);
+    text-shadow: -3px -3px 0 var(--dark-blue), 1px -1px 0 var(--dark-blue), -1px 1px 0 var(--dark-blue), 1px 1px 0 var(--dark-blue);
+    letter-spacing: 5px;
+}
+
+.about-me > .right > p {
+    font-size: 17px;
+    margin-top: 10px;
+    inline-size: clamp(100px, 400px);
+    overflow-wrap: break-word;
+    letter-spacing: 0.9px;
+}
+
+@media only screen and (min-width: 450px) {
+    .about-me > .right > p {
+        inline-size: 400px;
+    }
+}
