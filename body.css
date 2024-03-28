@@ -3,19 +3,23 @@
     background-color: var(--light-blue);
     width: 100%;
     padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .items {
     width: 100%;
     padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 @media only screen and (max-width: 344px) {
     .items {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .experience {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -30,11 +34,11 @@
 
 
 .item-container {
-    display: grid;
+    display: flex;
     justify-content: center;
     flex-flow: wrap;
     margin: 30px;
-    grid-gap: 50px
+    grid-gap: 100px
 }
 
 .item > h1 {
