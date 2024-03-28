@@ -69,15 +69,30 @@
 }
 
 .about-me > .right > p {
-    font-size: 17px;
+    font-size: 19px;
     margin-top: 10px;
     inline-size: clamp(100px, 400px);
     overflow-wrap: break-word;
-    letter-spacing: 0.9px;
+    letter-spacing: 1px;
+    font-weight: 550;
 }
 
 @media only screen and (min-width: 450px) {
     .about-me > .right > p {
         inline-size: 400px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about-me {
+        width: 100%;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .about-me > .left {
+        padding-right: 0px;
+        margin-bottom: 20px;
+        justify-self: center;
     }
 }
