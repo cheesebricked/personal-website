@@ -25,3 +25,13 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+html {
+  scroll-padding-top: 100px; /* height of sticky header */
+}
+
+@media only screen and (max-width: 500px) {
+    html {
+        scroll-padding-top: 230px;
+    }
+}

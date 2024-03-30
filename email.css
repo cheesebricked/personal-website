@@ -1,0 +1,80 @@
+.email {
+    width: 100%;
+    margin: 50px;
+    margin-bottom: 
+    0px;
+}
+
+.email-form {
+    width: 36%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+    background-color: var(--pink);
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+    .email-form {
+        width: 95%;
+    }
+}
+
+.email > h1 {
+    font-size: 45px;
+    letter-spacing: 5px;
+    color: var(--pink);
+    text-shadow: -3px -3px 0 var(--dark-blue), 1px -1px 0 var(--dark-blue), -1px 1px 0 var(--dark-blue), 1px 1px 0 var(--dark-blue);
+    transition: 0.1s;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+@media only screen and (max-width: 450px) {
+    .email > h1 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.email-form > input, textarea, button {
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.email-form > input, textarea {
+    border: 2px solid var(--light-blue);
+}
+
+.email-form > textarea {
+    resize: vertical;
+    height: 169px;
+}
+
+.email-form > input {
+    height: 30px;
+}
+
+.email-form > button {
+    border: 2px solid var(--light-blue);
+    background-color: var(--light-blue);
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: 550;
+    color: var(--dark-blue);
+    width: 70%;
+    transition: 0.1s;
+}
+
+.email-form > button:hover {
+    width: 80%;
+    height: 60px;
+    font-size: 25px;
+}

@@ -12,8 +12,9 @@
 .my-name {
     margin-top: 5px;
     font-size: 22px;
-    text-shadow: -3px -3px 0 var(--light-blue), 1px -1px 0 var(--light-blue), -1px 1px 0 var(--light-blue), 1px 1px 0 var(--light-blue);
+    text-shadow: -3px -3px 0 var(--dark-blue), 1px -1px 0 var(--dark-blue), -1px 1px 0 var(--dark-blue), 1px 1px 0 var(--dark-blue);
     letter-spacing: 5px;
+    color: var(--light-blue);
 }
 
 .h-links {
